@@ -1,0 +1,33 @@
+{
+  "name": "authors-and-books-demo-services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "db:migrate": "sequelize db:migrate",
+    "db:migrate:undo": "sequelize db:migrate:undo",
+    "watch": "ts-node-dev --respawn index.dev.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "module-alias": "^2.2.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.14",
+    "apollo-server-express": "^2.9.14",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.2",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1",
+    "sequelize-typescript": "^1.1.0"
+  },
+  "_moduleAliases": {
+    "#root": "./src"
+  }
+}
